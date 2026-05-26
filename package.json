@@ -1,0 +1,48 @@
+{
+  "name": "iteratio-plugin-sessions",
+  "version": "0.1.0",
+  "description": "Complete session management for iteratio agents - conversation transcripts, file changes (shadow git), and time-travel replay (inspired by Claude Code)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "iteratio",
+    "iteratio-plugin",
+    "sessions",
+    "conversation",
+    "transcript",
+    "history",
+    "shadow-git",
+    "version-control",
+    "rollback",
+    "time-travel",
+    "replay",
+    "claude-code"
+  ],
+  "author": "Rob Truitt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rjtruitt/iteratio-plugin-sessions.git"
+  },
+  "dependencies": {
+    "isomorphic-git": "^1.25.0",
+    "zod": "^3.0.0"
+  },
+  "peerDependencies": {
+    "iteratio": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run"
+  }
+}
